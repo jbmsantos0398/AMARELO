@@ -70,7 +70,7 @@ body {margin:0;}
 <link rel="stylesheet" href="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
 <!---------------------------------------------------------------------------------->
-<!-----------------------RELOGIO NOVO RELÓGIO BOM-------SEM MARK----------------->
+<!-----------------------RELOGIO NOVO RELÓGIO BOM-------SEM MARK--
 <center><u><html><head><title></title></head><body><SCRIPT LANGUAGE="JAVASCRIPT">
 <!--
 var now = new Date();
@@ -102,7 +102,7 @@ else {Year = yearNr;}
 var todaysDate =(" " + Day + ", " + dayNr + "/" + Month + "/" + Year);
 document.write('  '+todaysDate);
 //-->
-</SCRIPT>
+</SCRIPT><!-------------------
 <SPAN ID="Clock">00:00:00</SPAN>
 <SCRIPT LANGUAGE="JavaScript">
 <!--
@@ -126,13 +126,14 @@ document.write('  '+todaysDate);
     window.setInterval("Horario()",1000);
 //-->
 </SCRIPT></body></html></u>
-<!----------------------------------------------------------->
+<!---------------------------
 <br/><X class="font-effect-emboss">
 Deus seja louvado
-</X></center>
+</X>
 <!---------------------------------------------------------------------------------->
+</center>
 <!---------------------------------------------------------------------------------->
-<hr class="new1"></center>
+</center>
 <!---------------------FAIXA AZUL-- _blank --- _self -----
 <a href="../../index.html" target="_self">
 <div height="100" style="background-color: blue;line-height: 100px;text-align: center;"><p style="color: white"><FONT SIZE=+4><b>NOME⚫</b></FONT></p></div></a>
@@ -203,6 +204,94 @@ body {
 <!--##############################################################################-->
 <!--##############################################################################-->
 <!--#################################### INÍCIO ##################################-->
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!---------------------------------------------------------------------------------->
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+* {
+  box-sizing: border-box;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 3px solid RED;
+  margin-bottom: 12px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  border: 0px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: blue;
+  display: block
+}
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style></head><body>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pesquisa aqui..." title="Busca">
+
+<ul id="myUL">
+<!---------------------------------------------------------------------------------->
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!--#################################### INÍCIO ##################################-->
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!---------------------------------------------------------------------------------->
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+
+
+<!---------------------------------------------------------------------------------->
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!--####################################   FIM   ################################-->
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!---------------------------------------------------------------------------------->
+</ul><script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script></body></html>
+<!---------------------------------------------------------------------------------->
+<!--##############################################################################-->
+<!--##############################################################################-->
+<!--####################################   FIM   ################################-->
 <!--##############################################################################-->
 <!--##############################################################################-->
 <!---------------------------------------------------------------------------------->
@@ -330,20 +419,20 @@ body {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 60px;
+  right: 3px;
   z-index: 99;
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #0000ff;
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
 }
 #myBtn:hover {
-  background-color: #555;
+  background-color: #00ff44;
 }
 </style></head><body>
 <!---------------------------------------------------------------------------------->
